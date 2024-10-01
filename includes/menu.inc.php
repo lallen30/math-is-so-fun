@@ -48,7 +48,7 @@ if (isset($pageID) && $pageID == 'registration') {
 					<?php if (isset($_SESSION["userid"])): ?>
 						<li><a href="<?= htmlspecialchars($updirectory, ENT_QUOTES, 'UTF-8') ?>db/logout.php">Logout</a></li>
 					<?php else: ?>
-						<li><a href="<?= htmlspecialchars($updirectory, ENT_QUOTES, 'UTF-8') ?>registration/registration.php">Register</a></li>
+						<li><a href="<?= htmlspecialchars($updirectory, ENT_QUOTES, 'UTF-8') ?>/registration.php">Register</a></li>
 					<?php endif; ?>
 				</ul>
 

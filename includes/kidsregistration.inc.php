@@ -32,7 +32,7 @@ $insertgood = $usergood + $passgood;
 
 if ($insertgood == '4') {
     $checkrec = $mysqli->query("SELECT username FROM users WHERE username = '$childname' LIMIT 1");
-    while ($checkrow = mysql_fetch_array($checkrec)) {
+    while ($checkrow = mysqli_fetch_array($checkrec)) {
         $querychildname = $checkrow['username'];
     }
 
